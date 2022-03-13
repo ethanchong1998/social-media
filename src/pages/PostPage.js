@@ -45,6 +45,7 @@ const PostPage = () => {
       <input className="search_bar" type="text" placeholder="search by title..." 
       value={searchTerms} onChange={(e)=>{setSearchTerms(e.target.value)}}/>
       <button className="button_search" onClick={clearSearch}>Clear</button>
+      <h1>Manage Posts</h1>
       </div>
       {users.map((user)=>(
         <Posts key={user.id} posts={posts} user={user} onDelete={deletePost} search={searchTerms}/>

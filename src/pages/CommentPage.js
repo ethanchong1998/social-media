@@ -39,7 +39,9 @@ const CommentPage = () => {
         <input className="search_bar" type="text" placeholder="search by post ID..." 
         value={searchTerms} onChange={(e)=>{setSearchTerms(e.target.value)}}/>
         <button className="button_search" onClick={clearSearch}>Clear</button>
+        <h1>Manage Comments</h1>
         </div>
+        
         <Comments comments={comments} onDelete={deleteComment} search={searchTerms}/>
     </div>
   )
